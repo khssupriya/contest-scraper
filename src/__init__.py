@@ -15,13 +15,13 @@ from src.services import mailTodaysContests
 send_from = 'khssupriya@gmail.com'
 send_to = ['contest-scraper-instagram@googlegroups.com']
 
-def getContests():
-    while True:
-        now = datetime.now().strftime("%H")
-        print(now)
-        if now == "07":
-            mailTodaysContests(send_from, send_to)
-        time.sleep(60)
+# def getContests():
+#     while True:
+#         now = datetime.now().strftime("%H")
+#         print(now)
+#         if now == "07":
+#             mailTodaysContests(send_from, send_to)
+#         time.sleep(60)
     
 
 def create_app():
