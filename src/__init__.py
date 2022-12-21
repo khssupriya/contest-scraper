@@ -25,7 +25,7 @@ def getContests():
     
 
 def create_app():
-    threading.Thread(target=getContests).start()
+    # threading.Thread(target=getContests).start()
     app = Flask(__name__)
     app.config.from_object(appConfig.Config)
     # db.init_app(app)
