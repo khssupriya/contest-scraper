@@ -253,7 +253,7 @@ class ContestsRetreiver:
 def getTodaysImages():
     images = []
     reteriver = ContestsRetreiver()
-    contests = reteriver.getAllUpcomingContestDetails()
+    contests = reteriver.getTodaysContestDetails()
     imageGenerator = ImageGenerator()
     for contest in contests:
         generatedImage = imageGenerator.generateImage(Contest.fromJson(contest))
